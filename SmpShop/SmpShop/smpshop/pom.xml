@@ -47,18 +47,6 @@
             <scope>provided</scope>
         </dependency>
 
-        <!-- AstraEconomy API, optional at runtime - preferred economy backend,
-             hooked directly with no Vault dependency required.
-             Run `mvn install` in the AstraEconomy project first so this jar is
-             available in your local Maven repo (~/.m2). -->
-        <dependency>
-            <groupId>com.astra.econ</groupId>
-            <artifactId>AstraEconomy</artifactId>
-            <version>1.0.0</version>
-            <scope>provided</scope>
-        </dependency>
-    </dependencies>
-
     <build>
         <finalName>${project.name}</finalName>
         <plugins>
