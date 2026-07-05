@@ -21,10 +21,10 @@ jobs:
           cache: maven
 
       - name: Build with Maven
-        run: mvn -B package --file SMPShop-plugin-source/SMPShop-plugin-source/smpshop/pom.xml
+        run: mvn -B package --file SmpShop/SmpShop/smpshop/pom.xml
 
       - name: Upload JAR
         uses: actions/upload-artifact@v4
         with:
-          name: SMPShop-JAR
-          path: SMPShop-plugin-source/SMPShop-plugin-source/smpshop/target/*.jar
+          name: SmpShop-JAR
+          path: SmpShop/SmpShop/smpshop/target/*.jar
