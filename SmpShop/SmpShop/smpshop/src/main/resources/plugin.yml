@@ -1,0 +1,31 @@
+name: SMPShop
+version: '1.0.0'
+main: com.smpshop.ShopPlugin
+api-version: '1.20'
+author: YourName
+description: A categorized GUI shop (Overworld, Nether, End, Gear, Food) with Vault economy support.
+softdepend: [AstraEconomy, Vault]
+
+commands:
+  shop:
+    description: Opens the main shop menu.
+    usage: /shop
+  sell:
+    description: Sells the item currently in your hand.
+    usage: /sell [amount]
+  sellall:
+    description: Sells every sellable item in your inventory.
+    usage: /sellall
+  smpshop:
+    description: Admin command for the shop plugin.
+    usage: /smpshop reload
+    permission: smpshop.admin
+    permission-message: You do not have permission to do that.
+
+permissions:
+  smpshop.admin:
+    description: Allows reloading the SMPShop configuration.
+    default: op
+  smpshop.use:
+    description: Allows opening and using the shop.
+    default: true
